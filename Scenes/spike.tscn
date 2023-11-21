@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqj5umlgkg0f"]
+
+[ext_resource type="Script" path="res://Scripts/spike.gd" id="1_nbck8"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_spnbi"]
+
+[node name="Spike" type="Node2D"]
+script = ExtResource("1_nbck8")
+
+[node name="Area2D" type="Area2D" parent="."]
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-98.6711, -316.9)
+scale = Vector2(0.373476, 1)
+polygon = PackedVector2Array(269.016, 290, 303.825, 317, 234.208, 317)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(1.79999, -13.3375)
+scale = Vector2(26, -27.125)
+mesh = SubResource("PrismMesh_spnbi")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

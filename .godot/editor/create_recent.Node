@@ -1,0 +1,10 @@
+Area2D
+CollisionPolygon2D
+CollisionShape2D
+MeshInstance2D
+AudioStreamPlayer2D
+ColorRect
+Sprite2D
+CharacterBody2D
+RigidBody2D
+Camera2D

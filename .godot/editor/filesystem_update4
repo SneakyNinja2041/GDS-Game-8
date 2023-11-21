@@ -1,0 +1,15 @@
+res://Scene1.tscn
+res://Scene1.gdshader
+res://Player.gd
+res://Checkpoint.gd
+res://checkpoint.tscn
+res://Scripts/Checkpoint.gd
+res://RigidBody2D.cs
+res://player.tscn
+res://Scenes/checkpoint.tscn
+res://Scripts/GameManager.gd
+res://Scenes/player.tscn
+res://Scripts/Player.gd
+res://Scripts/spike.gd
+res://Scenes/spike.tscn
+res://Scenes/Scene1.tscn

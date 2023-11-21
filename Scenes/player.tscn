@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3ulor8vphxbp"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_frdmp"]
+[ext_resource type="AudioStream" uid="uid://cv83q3jobury7" path="res://Audio/JumpSound.wav" id="2_6yo11"]
+[ext_resource type="AudioStream" uid="uid://dp3h8hwlnxt6v" path="res://Audio/DeathAudio.wav" id="3_b5v0b"]
+[ext_resource type="AudioStream" uid="uid://bvmqbhlswkxik" path="res://Audio/achievement-philip-anderson-main-version-01-31-13804.mp3" id="3_p5t6f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2ghe"]
+size = Vector2(36, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_knici"]
+size = Vector2(36, 39.75)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(233, 1007)
+script = ExtResource("1_frdmp")
+JUMP_VELOCITY = -300.0
+
+[node name="Area2D" type="Area2D" parent="."]
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_l2ghe")
+
+[node name="SoundJump" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(27, 22)
+stream = ExtResource("2_6yo11")
+volume_db = 6.559
+
+[node name="SoundDeath" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_b5v0b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SoundBG" type="AudioStreamPlayer2D" parent="ColorRect"]
+position = Vector2(14, 16)
+stream = ExtResource("3_p5t6f")
+volume_db = -21.207
+autoplay = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 20.125)
+shape = SubResource("RectangleShape2D_knici")

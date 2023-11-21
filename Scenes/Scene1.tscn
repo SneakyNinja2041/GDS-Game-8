@@ -1,0 +1,228 @@
+[gd_scene load_steps=6 format=3 uid="uid://bon5t7l47fub2"]
+
+[ext_resource type="Texture2D" uid="uid://cymbteav3biay" path="res://GDS BG.png" id="1_ehbtr"]
+[ext_resource type="PackedScene" uid="uid://c3ulor8vphxbp" path="res://Scenes/player.tscn" id="2_34npu"]
+[ext_resource type="PackedScene" uid="uid://mdd866qf8yx7" path="res://Scenes/checkpoint.tscn" id="3_fb1p3"]
+[ext_resource type="PackedScene" uid="uid://blqj5umlgkg0f" path="res://Scenes/spike.tscn" id="4_jajym"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_756xe"]
+size = Vector2(1282, 14)
+
+[node name="Scene1" type="Node2D"]
+
+[node name="GdsBg" type="Sprite2D" parent="."]
+position = Vector2(619, 409.5)
+scale = Vector2(1, 1.19182)
+texture = ExtResource("1_ehbtr")
+
+[node name="Red" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 942.0
+offset_right = 1033.0
+offset_bottom = 1059.0
+color = Color(1, 0.627451, 0.572549, 1)
+
+[node name="Orange" type="ColorRect" parent="Red"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -161.0
+offset_right = 840.0
+offset_bottom = -4.0
+color = Color(0.921569, 0.658824, 0.505882, 1)
+
+[node name="Yellow" type="ColorRect" parent="Red"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -313.0
+offset_right = 835.0
+offset_bottom = -167.0
+color = Color(0.980392, 0.972549, 0.568627, 1)
+
+[node name="Green" type="ColorRect" parent="Red"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -465.0
+offset_right = 836.0
+offset_bottom = -323.0
+color = Color(0.607843, 0.913725, 0.639216, 1)
+
+[node name="Blue" type="ColorRect" parent="Red"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -603.0
+offset_right = 835.0
+offset_bottom = -467.0
+color = Color(0.647059, 0.941176, 0.933333, 1)
+
+[node name="Purple" type="ColorRect" parent="Red"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -736.0
+offset_right = 837.0
+offset_bottom = -609.0
+color = Color(1, 0.647059, 0.984314, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(620, 543)
+
+[node name="Floor" type="RigidBody2D" parent="."]
+position = Vector2(674, 909)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(-62, 160)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor"]
+offset_left = -1314.0
+offset_top = 138.0
+offset_right = 1616.0
+offset_bottom = 182.0
+color = Color(0.301225, 0.61261, 0.332373, 1)
+
+[node name="Floor2" type="RigidBody2D" parent="."]
+position = Vector2(670, 735)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
+position = Vector2(-41, 204)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor2"]
+offset_left = -499.0
+offset_top = 196.0
+offset_right = 375.0
+offset_bottom = 211.0
+color = Color(0.6, 0.6, 0.6, 1)
+
+[node name="Floor3" type="RigidBody2D" parent="."]
+position = Vector2(674, 556)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
+position = Vector2(10, 222)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor3"]
+offset_left = -487.0
+offset_top = 215.0
+offset_right = 359.0
+offset_bottom = 230.0
+color = Color(0.601223, 0.601223, 0.601223, 1)
+
+[node name="Floor4" type="RigidBody2D" parent="."]
+position = Vector2(678, 377)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4"]
+position = Vector2(3, 247)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor4"]
+offset_left = -501.0
+offset_top = 239.0
+offset_right = 359.0
+offset_bottom = 255.0
+color = Color(0.601223, 0.601223, 0.601223, 1)
+
+[node name="Floor5" type="RigidBody2D" parent="."]
+position = Vector2(682, 205)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5"]
+position = Vector2(-45, 272)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor5"]
+offset_left = -507.0
+offset_top = 265.0
+offset_right = 355.0
+offset_bottom = 280.0
+color = Color(0.601223, 0.601223, 0.601223, 1)
+
+[node name="Floor6" type="RigidBody2D" parent="."]
+position = Vector2(686, 35)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor6"]
+position = Vector2(-21, 301)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor6"]
+offset_left = -505.0
+offset_top = 294.0
+offset_right = 343.0
+offset_bottom = 310.0
+color = Color(0.601223, 0.601223, 0.601223, 1)
+
+[node name="Floor7" type="RigidBody2D" parent="."]
+position = Vector2(694, -94)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor7"]
+position = Vector2(-21, 301)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="Floor7"]
+offset_left = -519.0
+offset_top = 294.0
+offset_right = 343.0
+offset_bottom = 310.0
+color = Color(0.601223, 0.601223, 0.601223, 1)
+
+[node name="WallL" type="RigidBody2D" parent="."]
+position = Vector2(333, 657)
+rotation = 1.5708
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallL"]
+position = Vector2(-125.999, 145)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="WallL"]
+offset_left = -458.0
+offset_top = 138.0
+offset_right = 396.0
+offset_bottom = 182.0
+color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[node name="WallR" type="RigidBody2D" parent="."]
+position = Vector2(1201, 647)
+rotation = 1.5708
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallR"]
+position = Vector2(-55.9994, 175)
+shape = SubResource("RectangleShape2D_756xe")
+
+[node name="ColorRect" type="ColorRect" parent="WallR"]
+offset_left = -448.0
+offset_top = 136.002
+offset_right = 406.0
+offset_bottom = 180.002
+color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[node name="Player" parent="." instance=ExtResource("2_34npu")]
+position = Vector2(201, 1008)
+
+[node name="Checkpoint" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(217, 1000)
+spawnpoint = true
+
+[node name="Checkpoint2" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(876, 1003)
+
+[node name="Checkpoint3" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(218, 867)
+
+[node name="Checkpoint4" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(219, 700)
+
+[node name="Checkpoint5" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(216, 554)
+
+[node name="Checkpoint6" parent="." instance=ExtResource("3_fb1p3")]
+position = Vector2(220, 409)
+
+[node name="Spike" parent="." instance=ExtResource("4_jajym")]
+position = Vector2(482, 1046)
