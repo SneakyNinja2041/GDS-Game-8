@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bon5t7l47fub2"]
+[gd_scene load_steps=8 format=3 uid="uid://bon5t7l47fub2"]
 
 [ext_resource type="Texture2D" uid="uid://cymbteav3biay" path="res://GDS BG.png" id="1_ehbtr"]
 [ext_resource type="PackedScene" uid="uid://c3ulor8vphxbp" path="res://Scenes/player.tscn" id="2_34npu"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://blqj5umlgkg0f" path="res://Scenes/spike.tscn" id="4_jajym"]
 [ext_resource type="PackedScene" uid="uid://dblitv726xh81" path="res://Scenes/DeathCube.tscn" id="5_xsg6m"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="6_a3gmf"]
-[ext_resource type="PackedScene" uid="uid://btpcajbl7b8qk" path="res://Scenes/next_level.tscn" id="7_7jm68"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_756xe"]
 size = Vector2(1282, 14)
@@ -209,50 +208,31 @@ color = Color(0.294118, 0.294118, 0.294118, 1)
 position = Vector2(201, 1008)
 
 [node name="Checkpoint" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(214, 1029)
+position = Vector2(217, 1000)
 spawnpoint = true
 
 [node name="Checkpoint2" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(213, 916)
+position = Vector2(876, 1003)
 
 [node name="Checkpoint3" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(215, 753)
+position = Vector2(218, 867)
 
 [node name="Checkpoint4" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(217, 599)
+position = Vector2(219, 700)
 
 [node name="Checkpoint5" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(215, 450)
+position = Vector2(216, 554)
 
 [node name="Checkpoint6" parent="." instance=ExtResource("3_fb1p3")]
-position = Vector2(215, 307)
+position = Vector2(220, 409)
 
 [node name="Spike" parent="." instance=ExtResource("4_jajym")]
 position = Vector2(482, 1046)
 
 [node name="DeathCube" parent="." instance=ExtResource("5_xsg6m")]
-position = Vector2(415, 1032)
+position = Vector2(374, 1032)
 
 [node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("current_checkpoint", "player")]
 script = ExtResource("6_a3gmf")
 current_checkpoint = NodePath("../Checkpoint")
 player = NodePath("../Player")
-
-[node name="NextLevel" parent="." instance=ExtResource("7_7jm68")]
-position = Vector2(215, 891)
-
-[node name="NextLevel2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_7jm68")]
-position = Vector2(210, 747)
-player = NodePath("../Player")
-
-[node name="NextLevel3" parent="." instance=ExtResource("7_7jm68")]
-position = Vector2(210, 592)
-
-[node name="NextLevel4" parent="." instance=ExtResource("7_7jm68")]
-position = Vector2(210, 439)
-
-[node name="NextLevel5" parent="." instance=ExtResource("7_7jm68")]
-position = Vector2(210, 299)
-
-[node name="NextLevel6" parent="." instance=ExtResource("7_7jm68")]
-position = Vector2(210, 172)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dblitv726xh81"]
+
+[ext_resource type="Script" path="res://Scripts/DeathCube.gd" id="1_ipl6l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3y161"]
+size = Vector2(23, 23)
+
+[node name="DeathCube" type="Node2D"]
+script = ExtResource("1_ipl6l")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 3.5)
+shape = SubResource("RectangleShape2D_3y161")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -12.0
+offset_top = -8.0
+offset_right = 11.0
+offset_bottom = 15.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

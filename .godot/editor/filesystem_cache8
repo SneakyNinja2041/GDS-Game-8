@@ -1,18 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700532652
-GDS BG.png::CompressedTexture2D::6482241005909666592::1700521956::1700521957::1::::<><>::
-icon.svg::CompressedTexture2D::2786217416790793505::1700266911::1700267000::1::::<><>::
-Scene1.gdshader::Shader::-1::1700532639::0::1::::<><>::
-Scene1.tscn::PackedScene::3397758544396181397::1700532652::0::1::::<><>::uid://cymbteav3biay::::res://GDS BG.png<>uid://c3ulor8vphxbp::::res://Scenes/player.tscn
-::res://Audio/::1700532639
-achievement-philip-anderson-main-version-01-31-13804.mp3::AudioStreamMP3::3886132576322623270::1700523041::1700532634::1::::<><>::
-DeathAudio.wav::AudioStreamWAV::8270381635078926695::1700529744::1700532636::1::::<><>::
-JumpSound.wav::AudioStreamWAV::6316661683364076740::1700529695::1700532639::1::::<><>::
-::res://Scenes/::1700532652
-checkpoint.tscn::PackedScene::848702015943494310::1700532300::0::1::::<><>::res://Scripts/Checkpoint.gd
-player.tscn::PackedScene::6780110377217392917::1700532639::0::1::::<><>::res://Scripts/Player.gd<>uid://cv83q3jobury7::::res://Audio/JumpSound.wav<>uid://bvmqbhlswkxik::::res://Audio/achievement-philip-anderson-main-version-01-31-13804.mp3
-::res://Scripts/::1700532616
-Checkpoint.gd::GDScript::-1::1700532300::0::1::::<>Node2D<>::
-GameManager.gd::GDScript::-1::1700532275::0::1::::<>Node<>::
-Player.gd::GDScript::-1::1700532538::0::1::::Player<>CharacterBody2D<>::
-RigidBody2D.cs::CSharpScript::-1::1700532538::0::1::::<><>::
+::res://::1700618350
+GDS BG.png::CompressedTexture2D::6482241005909666592::1700618282::1700618282::1::::<><>::
+icon.svg::CompressedTexture2D::2786217416790793505::1700618282::1700618282::1::::<><>::
+README.md::TextFile::-1::1700618282::0::1::::<><>::
+::res://Audio/::1700618282
+achievement-philip-anderson-main-version-01-31-13804.mp3::AudioStreamMP3::3886132576322623270::1700618282::1700618282::1::::<><>::
+DeathAudio.wav::AudioStreamWAV::8270381635078926695::1700618282::1700618282::1::::<><>::
+JumpSound.wav::AudioStreamWAV::6316661683364076740::1700618282::1700618282::1::::<><>::
+::res://Scenes/::1700618282
+checkpoint.tscn::PackedScene::848702015943494310::1700618282::0::1::::<><>::res://Scripts/Checkpoint.gd
+player.tscn::PackedScene::6780110377217392917::1700618282::0::1::::<><>::res://Scripts/Player.gd<>uid://cv83q3jobury7::::res://Audio/JumpSound.wav<>uid://dp3h8hwlnxt6v::::res://Audio/DeathAudio.wav<>uid://bvmqbhlswkxik::::res://Audio/achievement-philip-anderson-main-version-01-31-13804.mp3
+Scene1.tscn::PackedScene::3397758544396181397::1700618282::0::1::::<><>::uid://cymbteav3biay::::res://GDS BG.png<>uid://c3ulor8vphxbp::::res://Scenes/player.tscn<>uid://mdd866qf8yx7::::res://Scenes/checkpoint.tscn<>uid://blqj5umlgkg0f::::res://Scenes/spike.tscn
+spike.tscn::PackedScene::3192129104041323135::1700618282::0::1::::<><>::res://Scripts/spike.gd
+::res://Scripts/::1700618282
+Checkpoint.gd::GDScript::-1::1700618282::0::1::::Checkpoint<>Node2D<>::
+GameManager.gd::GDScript::-1::1700618282::0::1::::<>Node<>::
+Player.gd::GDScript::-1::1700618282::0::1::::Player<>CharacterBody2D<>::
+RigidBody2D.cs::CSharpScript::-1::1700618282::0::1::::<><>::
+spike.gd::GDScript::-1::1700618282::0::1::::<>Node2D<>::

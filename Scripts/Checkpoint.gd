@@ -9,6 +9,8 @@ var activated = false
 func activate():
 	GameManager.current_checkpoint = self
 	activated = true
+	GameManager.checkpointLocation = self.position
+	print_debug("Chechpoint Activated")
 
 
 func _on_area_2d_area_entered(area):
